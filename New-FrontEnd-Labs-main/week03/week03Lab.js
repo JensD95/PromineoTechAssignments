@@ -31,7 +31,7 @@
 console.log(`--------------------------
 Question 1: alphabetString \n`);
 
-let alphabetString = 'abcdefghijklmnopqrstuvwxyz'; 
+
 
 /*
  * Using the provided code above:
@@ -43,6 +43,9 @@ let alphabetString = 'abcdefghijklmnopqrstuvwxyz';
 //console.log(alphabetArray);
 //prints (1) ['abcdefghijklmnopqrstuvwxyz']
 //left in comment form because of conflict with alphabetArray being defined on line 51
+
+let alphabetString = ['abcdefghijklmnopqrstuvwxyz']; 
+console.log(alphabetString);
 
 // Question 2: alphabetArray
 console.log(`--------------------------
