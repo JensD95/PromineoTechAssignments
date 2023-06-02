@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Week 9 - Second Page</title>
+</head>
+<body>
+  <nav class="navbar-nav container-fluid navbar-inverted navbar-fixed-top bg-dark">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand h4 text-success" href="page1.html">Home</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+            <a class="dropdown-toggle h4 text-success" data-toggle="dropdown" href="page1.html">Pages
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a class="nav-tabs text-danger" href="page1.html">Page 1(Home)</a></li>
+                <li><a class="nav-tabs text-warning"href="page2.html">Page 2</a></li>
+                <li><a class="nav-tabs text-success" href="page3.html">Page 3</a></li>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="alert text-center alert-success h3">
+    This is the second page.
+</div>
+<div>
+  <form action="page1.html">
+    <input class="bg-dark text-success container-fluid" type="submit" value="This button will take you to page 1.">
+  </form>
+  <form>
+    <input class="bg-dark text-success container-fluid" type="submit" value="This button will do nothing, as you are already viewing page 2.">
+  </form>
+  <form action="page3.html">
+    <input class="bg-dark text-success container-fluid" type="submit" value="This button will take you to page 3.">
+  </form>
+</div>
+<div>
+  <div class="alert text-center alert-success h3">
+    This is a form used to take a user's email and password.
+</div>
+  <form action="page2.html">
+    <div class="alert text-left alert-info h2 form-group">
+      <label for="email">The form box below takes an email as input</label>
+      <input type="email" class="form-control" placeholder="Your email address" id="email">
+    </div>
+    <div class="alert text-left alert-info h2 form-group">
+      <label for="pwd">The form box below takes the user inputted password</label>
+      <input type="password" class="form-control" placeholder="Your password" id="pwd">
+    </div>
+    <div class="form-group form-check">
+      <div class="alert text-left alert-info h2 form-group">
+        The check box below is used to store a user's login information. <br><br>
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Week 9 - Home Page</title>
+</head>
+<body>
+    <nav class="navbar-nav container-fluid navbar-inverted navbar-fixed-top bg-dark">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand h4 text-success" href="page1.html">Home</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a class="dropdown-toggle h4 text-success" data-toggle="dropdown" href="page1.html">Pages
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-tabs text-danger" href="page1.html">Page 1(Home)</a></li>
+                    <li><a class="nav-tabs text-warning"href="page2.html">Page 2</a></li>
+                    <li><a class="nav-tabs text-success" href="page3.html">Page 3</a></li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="alert text-center alert-success h3">
+        This is the home page.
+    </div>
+    <table class="container-fluid">
+        <p class="alert-info text-center">The following six table alert elements will not stack vertically when the screen is shrunk.</p>
+        <tr>
+            <td>
+                <div class="alert alert-primary">
+                    This is a table element with a the primary alert class.
+                </div>
+            </td>
+            <td>
+                <div class="alert alert-success">
+                    This is a table element with the success alert class.
+                </div>
+            </td>
+            <td>
+                <div class="alert alert-warning">
+                    This is a table element with the warning alert class.
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="alert alert-danger">
+                    This is a table element with the danger alert class.
+                </div>
+            </td>
+            <td>
+                <div class="alert alert-info">
+                    This is a table element with the info alert class.
+                </div>
+            </td>
+            <td>
+                <div class="alert alert-secondary">
+                    This is a table element with the secondary alert class.
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="container-fluid">
+        <p class="alert-info text-center">The following six column alert blocks will stack vertically when the screen is shrunk.</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="alert alert-primary">
+                    This is a column element with the primary alert class.
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="alert alert-success">
+                    This is a column element with the success alert class.
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="alert alert-warning">
+                    This is a column element with the warning alert class.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="alert alert-danger">
+                    This is a column element with the danger alert class.
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="alert alert-info">
+                    This is a column element with the info alert class.
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="alert alert-secondary">
+                    This is a column element with the secondary alert class.
+                </div>
+            </div>
+        </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
