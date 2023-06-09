@@ -26,10 +26,10 @@
 /* ----------------------------------------------------- */
 
 /*------------------------ Creating a website with only JS ------------------------*/
-console.log(`-------------------------- 
+console.log(`--------------------------
 Part 1: Create a form with only JavaScript`)
 
-/** 
+/**
  *
  * Step 1: Uncomment out the 'console.log(myForm)' at the bottom of the section.
  * Step 2: Using let, make a new variable called 'myForm'.
@@ -41,8 +41,9 @@ Part 1: Create a form with only JavaScript`)
            You should now have a label and a input on your website.
            Do the same steps, appending a label/input for Email, and a submit button to your form.
  * ↓ YOUR CODE HERE ↓ */
-
-// console.log(myForm)
+let myForm = document.createElement('form')
+let myNameLabel = document.createElement('')
+ console.log(myForm)
 //Question: Besides changing the innerHTML, what other HTML things can we change using JavaScript?
 //Answer:
 
