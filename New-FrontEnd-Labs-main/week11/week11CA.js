@@ -1,9 +1,11 @@
 window.addEventListener("DOMContentLoaded", () => {
     const tiles = Array.from(document.querySelectorAll(".tile"));
     const playerDisplay = document.querySelector(".display-player");
-    const resetButton = document.querySelector("#reset");
-    const announcer = document.querySelector(".announcer");
-    let board = ["", "", "", "", "", "", "", "", ""];
+    const resetButton = document.querySelector(".reset");
+    let board = [
+        "", "", "",
+        "", "", "",
+        "", "", ""];
     let currentPlayer = "X";
     let isGameActive = true;
 
@@ -35,8 +37,8 @@ window.addEventListener("DOMContentLoaded", () => {
         playerDisplay.classList.add(`player${currentPlayer}`);
     };
 
-    const announce = (type) => {
-        switch(type){
+    /*const announce = (type) => {
+        /*switch(type){
             case PLAYERO_WON:
                 announcer.innerHTML = 'Player <span class="playerO">O</span> Won';
                 break;
@@ -46,8 +48,17 @@ window.addEventListener("DOMContentLoaded", () => {
             case TIE:
                 announcer.innerHTML = "Tie";
         }
-        announcer.classList.remove("hide");
-    };
+        const winner = type === PLAYERO_WON ? "O" : "X";
+        const thisModal = document.getElementById("thisModal");
+        const thatModal = document.getElementById("thatModal");
+        if (winner === "O") {
+            $(thisModal).modal('show');
+        } else if (winner === "X") {
+            $(thatModal).modal('show');
+        } else {
+            announcer.innerHTML = "Tie";
+        }
+    };*/
 
     function handleResultValidation() {
         let roundWon = false;
@@ -60,12 +71,13 @@ window.addEventListener("DOMContentLoaded", () => {
                 continue;
             }
             if (a === b && b === c) {
-                roundWin = true;
+                roundWon = true;
                 break;
             }
         }
         if (roundWon) {
-            announce(currentPlayer === "X" ? PLAYERX_WON : PLAYERO_WON);
+            $(winModal).modal('show');
+            document.getElementById("p").textContent = "Player " + currentPlayer + " Won";
             isGameActive = false;
             return;
         }
@@ -89,17 +101,14 @@ window.addEventListener("DOMContentLoaded", () => {
     const resetBoard = () => {
         board = ["", "", "", "", "", "", "", "", ""];
         isGameActive = true;
-        announcer.classList.add("hide");
-
-        if (currentPlayer === "O") {
-            changePlayer();
-        }
-
         tiles.forEach(tile => {
             tile.innerText = "";
             tile.classList.remove("playerX");
             tile.classList.remove("playerO");
         });
     }
-    resetButton.addEventListener("click", resetBoard);
+    resetButton.addEventListener("click", () => {
+        resetBoard();
+    } );
+   
 });
