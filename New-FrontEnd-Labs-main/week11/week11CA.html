@@ -9,21 +9,9 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.css">
 <body class="bg-dark">
     <div id="winModal" data-show="true" class="modal">
-        <div class="modal-content">
-            <button type="button" class="close reset" data-dismiss="modal">Play Again</button>
-            <p class="text-center" id="p"></p>
-        </div>
-    </div>
-    <div id="thisModal" data-show="true" class="modal">
-        <div class="modal-content">
-            <button type="button" class="close reset" data-dismiss="modal">Play Again</button>
-            <p>PLAYER O WON!</p>
-        </div>
-    </div>
-    <div id="thatModal" data-show="true" class="modal">
-        <div class="modal-content">
-            <button type="button" class="close reset" data-dismiss="modal">Play Again</button>
-            <p>PLAYER X WON!</p>
+        <div class="modal-content bg-dark modal-style">
+            <button type="button" class="close reset text-white playAgain-button" data-dismiss="modal">Play Again</button>
+            <p class="text-center game-over" id="p"></p>
         </div>
     </div>
     <main class="bg-dark">

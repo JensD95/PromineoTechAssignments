@@ -81,7 +81,10 @@ window.addEventListener("DOMContentLoaded", () => {
             isGameActive = false;
             return;
         }
-        if (!board.includes("")) announce(TIE);
+        if (!board.includes("")) {
+            $(winModal).modal('show');
+            document.getElementById("p").textContent = "Tie";
+        }
     };
 
     const userAction = (tile, index) => {
