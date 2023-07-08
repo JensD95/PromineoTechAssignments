@@ -1,15 +1,27 @@
-import React, {Component} from 'react'
+import React from 'react';
+import { Container, Nav, Navbar, NavbarBrand } from 'reactstrap';
 
-export default class Nav extends Component {
-  render() {
+new class Nav {
+    render() {
+        return (
+            <div>
+                <nav className="navbar-dark nav">Movie Reviews</nav>
+            </div>
+        )
+    }
+}
+
+export default function NavbarComponent() {
     return (
-      <nav className="navBar">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    )
-  }
+        <div>
+            <Navbar color="light" dark>
+                <Container>
+                    <NavbarBrand color='light' className='nav' href="/">Movie Reviews</NavbarBrand>
+                    <Nav>
+                       
+                    </Nav>
+                </Container>
+            </Navbar>
+        </div>
+    );
 }

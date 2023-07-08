@@ -1,0 +1,39 @@
+.navbar-dark {
+    background-color: rgb(16, 16, 16);
+    height: 60px;
+    color: blue;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: xx-large;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav:visited {
+    background-color: rgb(16, 16, 16);
+    color: rgb(176,157,114);
+    padding: 2px;
+}
+
+
+.nav:hover {
+    background-color: rgb(16, 16, 16);
+    color: white;
+}
+
+.nav:active {
+    background-color: rgb(16, 16, 16);
+    color: #b8944a;
+    padding: 2px;
+}

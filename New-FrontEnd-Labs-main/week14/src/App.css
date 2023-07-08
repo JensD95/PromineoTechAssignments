@@ -1,40 +1,139 @@
-/* NAVBAR */
+.App {
+  text-align: center;
+  background-color: rgb(16, 16, 16);
+}
 
-.navBar {
-  width: 100vw;
-  margin-top: 0;
-  background-color: rgb(98, 107, 202);
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
-  font-size: 24px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.posterStyle {
+  border: 4px solid white;
+  border-radius: 5%;
+  width: 350;
+  height: 400px;
+  margin: 10px;
+}
+
+.titleStyle {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.releaseDateStyle {
+  color: white;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.descriptionStyle {
+  color: white;
+  font-size: 15px;
+  margin: 10px;
+}
+
+
+
+.test {
+  color: white;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+}
+.rating > button:hover:before,
+.rating > button:hover ~ button:before {
+   content: "\2605";
+   position: absolute;
+   color: gold;
+}
+.rating > button {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > button:hover,
+.rating > button:hover ~ button {
+  color: transparent;
+}
+
+.ratingStyle {
+  color: white;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.reviewBox {
+  color: black;
+  font-size: 15px;
+  margin: 10px;
   padding: 5px;
 }
 
-.navBar ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
+.reviewSection {
+  color: white;
+  font-size: 55px;
+  margin: 10px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
 }
 
-.navBar ul li {
+.reviewList {
+  color: white;
+  font-size: 15px;
+  margin: 10px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30%;
+}
+
+ul {
   list-style: none;
-  margin-right: 1em;
+  border: 2px solid white;
+  width: 40%;
 }
 
-.navBar ul li:hover {
-  color: rgba(0, 0, 0, 0.705);
-  text-decoration: underline;
-}
-
-.navBar ul li:active {
-  background-color: green;
-}
-
-/* WELCOME SECTION */
-
-.welcomeSection {
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background-color: #eeeeee;
-  padding: 1em;
+ul li {
+  border: 2px solid white;
+  margin: 10px;
+  padding: 5px;
 }
